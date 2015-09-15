@@ -2,21 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.abbreviations{
-  input[type="input"] {
-    width: 150px;
+  h1 {
+    color: #0066CC;
+  }
+
+  input[type="text"] {
+    width: 200px;
+    height: 30px;
     display: block;
     margin-bottom: 10px;
-    background-color: grey;
+    background-color: LightGrey;
+    font-size: 14px;
+    color: #003366;
   }
 
   form {
     background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
     background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-    margin:auto;
-    position:relative;
-    width:550px;
-    height:450px;
+    margin: auto;
+    position: relative;
+    width: 550px;
+    height: 450px;
     font-family: Tahoma, Geneva, sans-serif;
     front-size: 14px;
     font-style: italic;
@@ -38,4 +44,3 @@
   ul {
     color: #09C;
   }
-}

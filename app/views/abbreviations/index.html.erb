@@ -1,10 +1,11 @@
-
-<h1> Abbreviations Index </h1>
-<form action="/abbreviations", method="GET">
-  <span>Search: </span><input name="query" value="<%= params[:query] %>" />
-</form>
-<ul>
-  <% @abbrs.each do |abbr| %>
-    <li> <%= abbr.abbreviation.upcase %> - <%= abbr.full_name.upcase %> </li>
-  <% end %>
-</ul>
+<div class='abbreviations'>
+  <h1> Abbreviations Index </h1>
+  <form action="/abbreviations", method="GET">
+    <span>Search: </span><input type="text" name="query" value="<%=   params[:query] %>" />
+    <ul>
+      <% @abbrs.each do |abbr| %>
+        <li> <%= abbr.abbreviation.upcase %> - <%= abbr.full_name.upcase %> </li>
+      <% end %>
+    </ul>
+  </form>
+</div>

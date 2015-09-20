@@ -9,4 +9,9 @@ class AbbreviationsController < ApplicationController
     end
   end
 
+  def add_abbr
+      @abbr = abbr.new(params[:abbreviation], params[:full_name])
+      @abbr.save
+  end
+
 end

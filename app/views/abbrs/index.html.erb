@@ -7,6 +7,6 @@
         <li> <%= abbr.abbreviation.upcase %> - <%= abbr.full_name.upcase %> </li>
       <% end %>
     </ul>
-    <button onclick="location.href='addabbr'">Add</button>
+    <%= link_to "Add new abbreviation", new_abbr_path %>
   </form>
 </div>
